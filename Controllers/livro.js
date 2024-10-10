@@ -93,7 +93,5 @@ module.exports = {
   getLivro,
   postLivro,
   patchLivro,
-  modificaLivro,
   deleteLivro,
-  deletaLivroPorId,
 };

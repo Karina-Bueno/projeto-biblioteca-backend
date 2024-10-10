@@ -6,6 +6,7 @@ function getTodosFavoritos() {
 
 function deletaFavoritoPorID(id) {
 	const livros = JSON.parse(fs.readFileSync("favoritos.json"));
+	
 	const livrosFiltrados = livros.filter(livro => livro.id !== id); //verificamos se o id dos itens da lista se comparam com o id que foi revebido
 	fs.writeFileSync("favoritos.json", JSON.stringify(livrosFiltrados));
 }
